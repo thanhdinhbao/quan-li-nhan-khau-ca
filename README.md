@@ -1,5 +1,5 @@
 # HỆ THỐNG QUẢN LÝ NHÂN KHẨU CẤP XÃ
-**Đơn vị sử dụng:** Công an Xã Phú Lương
+**Đơn vị sử dụng:** Công an Phường Nông Trang
 **Phiên bản:** 1.0.0 (Chạy Offline 100%)
 
 ---
@@ -20,49 +20,3 @@ Phần mềm Desktop **Hệ thống Quản lý Nhân khẩu Cấp xã** được
 * **Sao lưu & Phục hồi DB:** Tự động tạo snapshot trước khi khôi phục, kiểm tra tính toàn vẹn SQLite.
 
 ---
-
-## 🔑 TÀI KHOẢN MẶC ĐỊNH
-
-| Loại tài khoản | Tên đăng nhập | Mật khẩu | Quyền hạn |
-| :--- | :--- | :--- | :--- |
-| **Quản trị viên** | `admin` | `admin123` | Toàn quyền hệ thống, Sao lưu/Phục hồi, Quản lý tài khoản |
-| **Cán bộ quản lý** | `officer` | `officer123` | Thêm, Sửa, Xóa mềm, Import/Export, Xem CCCD đầy đủ |
-| **Người xem** | `viewer` | `viewer123` | Tra cứu, Xem thông tin (số CCCD/SĐT bị che bớt), Export |
-
----
-
-## 🚀 HƯỚNG DẪN CÀI ĐẶT VÀ CHẠY ỨNG DỤNG
-
-### 1. Yêu cầu môi trường:
-* Python 3.11 trở lên (Đã hỗ trợ kiểm thử thành công trên Python 3.12).
-* Hệ điều hành Windows 10/11.
-
-### 2. Cài đặt các thư viện phụ thuộc:
-Mở Terminal / Command Prompt tại thư mục dự án và chạy:
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Chạy chương trình:
-```bash
-python main.py
-```
-
----
-
-## 📦 HƯỚNG DẪN BUILD THÀNH FILE EXE ĐỘC LẬP (PyInstaller)
-
-Để đóng gói phần mềm thành 1 file EXE duy nhất chạy offline không cần cài Python:
-
-### Bước 1: Cài đặt PyInstaller (Nếu chưa có)
-```bash
-pip install pyinstaller
-```
-
-### Bước 2: Chạy lệnh Đóng gói (Build EXE)
-```bash
-pyinstaller --noconfirm --onedir --windowed --name "QuanLyNhanKhau" --add-data "database/schema.sql;database" main.py
-```
-
-### Bước 3: Nhận kết quả
-File chạy ứng dụng sẽ nằm trong thư mục `dist/QuanLyNhanKhau/QuanLyNhanKhau.exe`. Bạn có thể copy thư mục này sang bất kỳ máy tính Windows nào để sử dụng ngay mà không cần cài thêm phần mềm nào khác!

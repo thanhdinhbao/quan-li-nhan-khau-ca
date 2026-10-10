@@ -211,12 +211,17 @@ class PersonView(QWidget):
         self.load_data()
 
     def load_areas_filter(self):
+        current_id = self.combo_area.currentData() if self.combo_area.count() > 0 else 0
         self.combo_area.blockSignals(True)
         self.combo_area.clear()
         self.combo_area.addItem("Tất cả khu vực", 0)
         areas = self.area_ctrl.get_all_areas()
-        for a in areas:
+        target_idx = 0
+        for i, a in enumerate(areas, 1):
             self.combo_area.addItem(a.name, a.id)
+            if current_id and a.id == current_id:
+                target_idx = i
+        self.combo_area.setCurrentIndex(target_idx)
         self.combo_area.blockSignals(False)
 
     def on_search(self, text: str):
@@ -236,20 +241,38 @@ class PersonView(QWidget):
         self.trash_btn.setChecked(False)
         self.is_showing_deleted = False
         self.search_box.clear()
+        self.current_page = 1
+        self.load_areas_filter()
         self.combo_area.setCurrentIndex(0)
         self.combo_gender.setCurrentIndex(0)
         self.combo_age.setCurrentIndex(0)
         self.combo_res.setCurrentIndex(0)
-        self.current_page = 1
-        self.load_areas_filter()
         self.load_data()
 
     def load_data(self):
         keyword = self.search_box.text()
-        area_id = self.combo_area.currentData()
+        
+        area_data = self.combo_area.currentData()
+        if self.combo_area.currentText().startswith("Tất cả") or area_data is None:
+            area_id = 0
+        else:
+            try:
+                area_id = int(area_data)
+            except (TypeError, ValueError):
+                area_id = 0
+
         gender = self.combo_gender.currentText()
+        if gender.startswith("Tất cả"):
+            gender = "Tất cả"
+
         age_group = self.combo_age.currentText()
+        if age_group.startswith("Tất cả"):
+            age_group = "Tất cả"
+
         res_status = self.combo_res.currentText()
+        if res_status.startswith("Tất cả"):
+            res_status = "Tất cả"
+
         is_deleted = 1 if self.is_showing_deleted else 0
 
         user = AuthService.get_current_user()

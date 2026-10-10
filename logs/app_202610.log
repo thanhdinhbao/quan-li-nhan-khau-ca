@@ -27,3 +27,44 @@
 2026-10-05 11:16:43,469 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
 2026-10-05 11:16:43,698 [INFO] PopulationManager: User 'admin' logged in successfully.
 2026-10-05 11:16:43,800 [INFO] PopulationManager: Database backup created: E:\PROJECT-PYTHON\T9-2026\test\backups\backup_population_20261005_111643.db
+2026-10-05 11:16:47,962 [INFO] numexpr.utils: NumExpr defaulting to 4 threads.
+2026-10-05 11:16:48,697 [INFO] PopulationManager: Starting application...
+2026-10-05 11:16:48,697 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
+2026-10-05 11:16:55,826 [INFO] PopulationManager: User 'admin' logged in successfully.
+2026-10-05 11:19:40,376 [INFO] numexpr.utils: NumExpr defaulting to 4 threads.
+2026-10-05 11:19:41,263 [INFO] PopulationManager: Starting application...
+2026-10-05 11:19:41,263 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
+2026-10-05 11:19:47,590 [INFO] PopulationManager: User 'admin' logged in successfully.
+2026-10-05 11:22:25,891 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
+2026-10-05 11:23:00,050 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
+2026-10-05 11:23:15,851 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
+2026-10-05 11:24:25,565 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
+2026-10-05 11:24:38,106 [INFO] numexpr.utils: NumExpr defaulting to 4 threads.
+2026-10-05 11:24:39,163 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
+2026-10-05 11:24:39,351 [INFO] PopulationManager: User 'admin' logged in successfully.
+2026-10-05 11:24:59,510 [INFO] numexpr.utils: NumExpr defaulting to 4 threads.
+2026-10-05 11:24:59,979 [INFO] PopulationManager: Starting application...
+2026-10-05 11:24:59,979 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
+2026-10-05 11:25:07,014 [INFO] PopulationManager: User 'admin' logged in successfully.
+2026-10-05 11:25:44,108 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
+2026-10-05 11:25:44,171 [INFO] PopulationManager: Database seeding completed successfully.
+2026-10-05 11:25:58,934 [INFO] numexpr.utils: NumExpr defaulting to 4 threads.
+2026-10-05 11:26:00,001 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
+2026-10-05 11:26:00,196 [INFO] PopulationManager: User 'admin' logged in successfully.
+2026-10-05 11:26:00,295 [INFO] PopulationManager: Database backup created: E:\PROJECT-PYTHON\T9-2026\test\backups\backup_population_20261005_112600.db
+2026-10-05 12:02:08,765 [INFO] numexpr.utils: NumExpr defaulting to 4 threads.
+2026-10-05 12:02:09,727 [INFO] PopulationManager: Starting application...
+2026-10-05 12:02:09,727 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
+2026-10-05 12:02:18,215 [INFO] PopulationManager: User 'admin' logged in successfully.
+2026-10-05 12:04:25,776 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
+2026-10-05 12:04:42,645 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
+2026-10-05 12:04:59,728 [INFO] numexpr.utils: NumExpr defaulting to 4 threads.
+2026-10-05 12:05:02,026 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
+2026-10-05 12:05:02,336 [INFO] PopulationManager: User 'admin' logged in successfully.
+2026-10-05 12:05:02,453 [INFO] PopulationManager: Database backup created: E:\PROJECT-PYTHON\T9-2026\test\backups\backup_population_20261005_120502.db
+2026-10-05 12:05:32,826 [INFO] numexpr.utils: NumExpr defaulting to 4 threads.
+2026-10-05 12:05:33,535 [INFO] PopulationManager: Starting application...
+2026-10-05 12:05:33,535 [INFO] PopulationManager: Initializing database at E:\PROJECT-PYTHON\T9-2026\test\data\population.db
+2026-10-05 12:05:37,676 [INFO] PopulationManager: User 'admin' logged in successfully.
+2026-10-05 12:07:03,809 [INFO] PopulationManager: Updated person ID 23
+2026-10-05 12:08:34,339 [INFO] PopulationManager: User 'admin' logged in successfully.

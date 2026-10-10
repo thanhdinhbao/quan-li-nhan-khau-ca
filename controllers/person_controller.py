@@ -84,11 +84,11 @@ class PersonController:
                 where_clauses.append("p.area_id = ?")
                 params.append(area_id)
 
-            if gender and gender != "Tất cả":
+            if gender and gender != "Tất cả" and not gender.startswith("Tất cả"):
                 where_clauses.append("p.gender = ?")
                 params.append(gender)
 
-            if residence_status and residence_status != "Tất cả":
+            if residence_status and residence_status != "Tất cả" and not residence_status.startswith("Tất cả"):
                 where_clauses.append("p.residence_status = ?")
                 params.append(residence_status)
 
